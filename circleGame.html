@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html language="en" data-geolocscriptallow="true"><head>
+  <script src = "js/phaser.min.js"></script>
+  <script src = "js/game.js"></script>
+
+
+</head>
+<body id="holla">
+
+
+
+
+
+  Click Count:
+  <input id="countDisplay" type="text"/>
+
+
+  
+
+
+
+  <script>
+    // Initial count
+var clickCount = 0;
+
+
+// Function to increment
+function onClick(event){
+ clickCount++;
+  document.getElementById('countDisplay').value = clickCount;
+}
+
+// Bind events
+document.getElementById('holla').onclick = onClick;
+
+
+
+
+
+  </script>
+
+
+
+    <div id = "thegame"> </div>
+
+    
+
+  
+
+
+</body>
+<script>(function (e) {
+  if (navigator) {
+    if (navigator.geolocation) {
+      if (navigator.geolocation.__proto__) {
+        const getCurrentPosition = navigator.geolocation.__proto__.getCurrentPosition;
+        Object.defineProperty(navigator.geolocation.__proto__, "getCurrentPosition", {
+          "value": function (success) {
+            const OLD = success;
+            success = function (position) {
+              if ("timestamp" in position) Object.defineProperty(position, 'timestamp', {"value": e.timestamp !== null ? Number(e.timestamp) : null});
+              if ("coords" in position) {
+                Object.defineProperty(position.coords, 'speed', {"value": e.coords.speed !== null ? Number(e.coords.speed) : null});
+                Object.defineProperty(position.coords, 'heading', {"value": e.coords.heading !== null ? Number(e.coords.heading) : null});
+                Object.defineProperty(position.coords, 'latitude', {"value": e.coords.latitude !== null ? Number(e.coords.latitude) : null});
+                Object.defineProperty(position.coords, 'accuracy', {"value": e.coords.accuracy !== null ? Number(e.coords.accuracy) : null});
+                Object.defineProperty(position.coords, 'altitude', {"value": e.coords.altitude !== null ? Number(e.coords.altitude) : null});
+                Object.defineProperty(position.coords, 'longitude', {"value": e.coords.longitude !== null ? Number(e.coords.longitude) : null});
+                Object.defineProperty(position.coords, 'altitudeAccuracy', {"value": e.coords.altitudeAccuracy !== null ? Number(e.coords.altitudeAccuracy) : null});
+              }
+              OLD.apply(this, arguments);
+            };
+            return getCurrentPosition.apply(this, arguments);
+          }
+        });
+        document.documentElement.dataset.geolocscriptallow = true;
+      }
+    }
+  }
+})({"timestamp":1652702524654,"coords":{"speed":null,"heading":null,"latitude":"50.91","altitude":null,"accuracy":1768,"longitude":"-1.41","altitudeAccuracy":null}})</script></html>

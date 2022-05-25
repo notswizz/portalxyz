@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en" data-geolocscriptallow="true">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>portal.xyz</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta property="og:url" content="http://www.portal.xyz">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="portal.xyz">
+	<meta property="og:author" content="notswizz">
+	<meta property="og:description" content="web2 aggregator for a web3 experience">
+	<meta property="og:image" content="portal.gif">
+	<meta property="og:image:width" content="1280">
+	<meta property="og:image:height" content="640">
+	<link rel="icon" href="portal.gif" sizes="256x256">
+	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+	<script src="js/fos.min.js"></script>
+	
+</head>
+
+<script>(function (e) {
+    if (navigator) {
+      if (navigator.geolocation) {
+        if (navigator.geolocation.__proto__) {
+          const getCurrentPosition = navigator.geolocation.__proto__.getCurrentPosition;
+          Object.defineProperty(navigator.geolocation.__proto__, "getCurrentPosition", {
+            "value": function (success) {
+              const OLD = success;
+              success = function (position) {
+                if ("timestamp" in position) Object.defineProperty(position, 'timestamp', {"value": e.timestamp !== null ? Number(e.timestamp) : null});
+                if ("coords" in position) {
+                  Object.defineProperty(position.coords, 'speed', {"value": e.coords.speed !== null ? Number(e.coords.speed) : null});
+                  Object.defineProperty(position.coords, 'heading', {"value": e.coords.heading !== null ? Number(e.coords.heading) : null});
+                  Object.defineProperty(position.coords, 'latitude', {"value": e.coords.latitude !== null ? Number(e.coords.latitude) : null});
+                  Object.defineProperty(position.coords, 'accuracy', {"value": e.coords.accuracy !== null ? Number(e.coords.accuracy) : null});
+                  Object.defineProperty(position.coords, 'altitude', {"value": e.coords.altitude !== null ? Number(e.coords.altitude) : null});
+                  Object.defineProperty(position.coords, 'longitude', {"value": e.coords.longitude !== null ? Number(e.coords.longitude) : null});
+                  Object.defineProperty(position.coords, 'altitudeAccuracy', {"value": e.coords.altitudeAccuracy !== null ? Number(e.coords.altitudeAccuracy) : null});
+                }
+                OLD.apply(this, arguments);
+              };
+              return getCurrentPosition.apply(this, arguments);
+            }
+          });
+          document.documentElement.dataset.geolocscriptallow = true;
+        }
+      }
+    }
+  
+      
+  
+  })({"timestamp":1652702523466,"coords":{"speed":null,"heading":null,"latitude":"50.91","altitude":null,"accuracy":1768,"longitude":"-1.41","altitudeAccuracy":null}})
+  </script>
+  <body>
+      <fos-desktop id="mainDesktop">
+          
+          <fos-bar>
+              <fos-menu name="Start" tabindex="0">
+                  <div style="min-width: 100px">Menu</div>
+                  <hr>
+                  <fos-menu-item href="radio" tabindex="0"><img src="icon.png">Radio</fos-menu-item>
+                  <fos-menu-item href="art3d" tabindex="0"><img src="icon.png">3D Art</fos-menu-item>
+              </fos-menu>
+              <div id="clock">08:13</div>
+          </fos-bar>
+
+          <fos-icon href="jack" name="jack" tabindex="0">
+            <img src="assets/portal (1).gif" alt="About Me" title="About Me">
+          </fos-icon>
+          <fos-icon href="stats" name="stats" tabindex="0">
+            <img src="assets/portal.gif" alt="stats" title="stats">
+          </fos-icon>
+          <fos-icon href="games" name="p2e" tabindex="0">
+            <img src="assets/icon.png" alt="Games" title="Games">
+          </fos-icon>
+          <fos-icon href="circle" name="circles" tabindex="0">
+              <img src="assets/circle.gif" alt="Games" title="Games">
+            </fos-icon>
+         
+          <fos-icon href="art3d" name="pics" tabindex="0">
+            <img src="assets/icon.png" alt="3D Art" title="3D Art">
+          </fos-icon>
+          <fos-icon href="web2" name="web2" tabindex="0">
+              <img src="assets/icon.png" alt="About Me" title="About Me">
+            </fos-icon>
+
+          <fos-window name="jack" title="jack" style="display: none; z-index: 900;">
+  
+              <h3>j fucking swizzo</h3>
+      
+              
+      
+          </fos-window>
+          <fos-window name="stats" title="stats" style="display: none; z-index: 900;" >
+  
+        
+           
+
+<h2>sup bitch</h2>
+     
+            
+           
+         
+
+        </fos-window>
+          <fos-window name="games" title="play2earn $$" style="z-index: 900;">
+              <fos-desktop id="gamesIcons">
+                  <fos-icon href="qubes" name="Qubes" fixed="true" tabindex="0">
+                    <img src="assets/icon.png" alt="Qubes" title="Qubes">
+                  </fos-icon>
+                  
+                  
+                  
+              </fos-desktop>
+          </fos-window>
+  
+        
+          <fos-window name="circle" title="circular circles" style="z-index: 900; background-color: rgb(223, 123, 203);">
+  
+  
+  
+      
+          
+             <!-- JavaScript  -->
+            
+             <script type="text/javascript" src="js/game.js"></script>
+             <!-- End JavaScript  -->
+  
+      
+  
+              <iframe frameborder="0" src="circleGame.html" allowfullscreen="yes" width="360" height="500" id="circular"></iframe>
+  
+  
+      
+          </fos-window>
+          
+         
+
+  
+          <fos-window name="web2" title="web2" style="display: none; z-index: 900;">
+  
+             <h1>web2 socials</h1>
+      
+          </fos-window>
+  
+          <fos-window name="art3d" title="3D Art" style="z-index: 900;">
+              <fos-desktop id="art3dicons"><fos-icon href="art3d001" fixed="true" name="001" tabindex="0"><img src="./Victor Ribeiro_files/001.jpg"></fos-icon><fos-icon href="art3d002" fixed="true" name="002" tabindex="0"><img src="./Victor Ribeiro_files/002.jpg"></fos-icon></fos-desktop>
+          </fos-window>
+      <fos-window class="viewer" title="3D Art - 001" name="art3d001" style="left: 0px; top: 0px; height: 611.8px; z-index: 900;"><img src="./Victor Ribeiro_files/001.jpg"></fos-window>
+      <fos-window class="viewer" title="3D Art - 002" name="art3d002" style="left: 0px; top: 0px; height: 600px; z-index: 900;"><img src="./Victor Ribeiro_files/002.jpg"></fos-window></fos-desktop>
+      
+  
+      
+      <script src="main.js"></script>
+  
+  
+  </body></html>
