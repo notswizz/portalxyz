@@ -1,11 +1,11 @@
 let game;
 let gameOptions = {
-	circleRadius: 180,
+	circleRadius: 90,
 	circleStrokeWidth: 4,
-	circleDistance: 190,
-	ballRadius: 35,
-	ballSpeed: [0.5, 9],
-	enemySpeedRange: [2, 11]
+	circleDistance: 100,
+	ballRadius: 20,
+	ballSpeed: [0.5, 7],
+	enemySpeedRange: [2, 10]
 }
 
 
@@ -20,8 +20,8 @@ window.onload = function() {
 			mode: Phaser.Scale.FIT,
             autoCenter: Phaser.Scale.CENTER_BOTH,
             parent: "thegame",
-            width: 425,
-            height: 600
+            width: 400,
+            height: 350
         },
         scene: playGame
     }
