@@ -163,7 +163,12 @@ document.getElementById('holla').onclick = onClick;
             <img src="assets/portal (1).gif" alt="journal" title="journal">
           </fos-icon>
 
-         <fos-icon href="bj" name="bj" tabindex="0">
+  
+               <fos-icon href="streams" name="streams" tabindex="0" fixed="true">
+            <img src="assets/streams.gif" alt="streams" title="streams">
+          </fos-icon>
+
+          <fos-icon href="bj" name="bj" tabindex="0">
             <img src="assets/portal.gif" alt="bj21" title="bj21">
           </fos-icon>
 
@@ -175,11 +180,8 @@ document.getElementById('holla').onclick = onClick;
             <img src="assets/portal.gif" alt="quiz" title="quiz">
           </fos-icon>
 
-
-     
-
-               <fos-icon href="streams" name="streams" tabindex="0" fixed="true">
-            <img src="assets/streams.gif" alt="streams" title="streams">
+         <fos-icon href="flappy" name="flappy" tabindex="0">
+            <img src="assets/portal.gif" alt="flappy" title="flappy">
           </fos-icon>
 
           <fos-window name="journal" title="journal" style="display: none; z-index: 900;">
@@ -196,6 +198,31 @@ document.getElementById('holla').onclick = onClick;
               
       
           </fos-window>
+
+         <fos-window name="flappy" title="flappy" width="400" height="500" >
+  
+        
+           
+
+ <!-- JavaScript  -->
+     
+             <script type="text/javascript" src="flappy/game.js"></script>
+         
+             <!-- End JavaScript  -->
+  
+
+  
+              <iframe frameborder="0" src="flappy/index.html" allowfullscreen="yes" width="400" height="500" id="circular" ></iframe>
+          
+
+         
+           
+         
+
+        </fos-window>
+
+
+        
           <fos-window name="guess" title="guess" width="400" height="200" >
   
         
@@ -279,6 +306,7 @@ document.getElementById('holla').onclick = onClick;
          
 
         </fos-window>
+
         
           <fos-window name="streams" title="streams" style="z-index: 900;">
               <fos-desktop id="gamesIcons">
