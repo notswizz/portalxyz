@@ -83,7 +83,7 @@ class playGame extends Phaser.Scene{
 			if(Phaser.Math.Distance.Between(this.ball.x, this.ball.y, enemy.x, enemy.y) < gameOptions.ballRadius * 2) {
 
 				this.scene.start("PlayGame");
-				console.count("lives", this.scene.start("PlayGame"))
+			console.count("lives", this.scene.start("PlayGame"))
 			
 			}
 			
@@ -98,7 +98,7 @@ class playGame extends Phaser.Scene{
 			enemy.speed = randomSpeed;
 			enemy.radians = randomAngle;
 			this.enemyGroup.add(enemy);
-			console.count("enemies", this.enemyGroup.add(enemy))
+			
 
 	
 
