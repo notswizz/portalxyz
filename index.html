@@ -60,16 +60,46 @@
       <fos-desktop id="mainDesktop">
           
           <fos-bar>
-              <fos-menu name="Start" tabindex="0">
-                  <div style="min-width: 100px">Menu</div>
+              <fos-menu name="token wallet" style="min-width: 100px">
+                  <div style="min-width: 10px">balance: $133,587,310</div>
                   <hr>
 
-                  <fos-menu-item href="art3d" tabindex="0"><img src="icon.png">3D Art</fos-menu-item>
+                  <fos-menu-item>QPQ: 1,234,069</fos-menu-item>
+                <br>
+              
+                 <fos-menu-item>USD: 690,420</fos-menu-item>
               </fos-menu>
-              <div id="clock">08:13</div>
+
+              <fos-menu name="live" style="min-width:30px; padding-left: 100px">
+                  <div>live: 3
+                    <br>
+                  upcoming: 5</div>
+                  <hr>
+
+                  <fos-menu-item>NBA: celtics vs heat</fos-menu-item>
+           
+                 <fos-menu-item>NBA: mavs vs warriors</fos-menu-item>
+                   <fos-menu-item>MLB: braves vs marlins</fos-menu-item>
+            
+              </fos-menu>
+
+            
+
+             <fos-menu name="portal wallet" style="min-width: 100px ; padding-left: 173px">
+                  <div style="min-width: 10px">frens: 69</div>
+                  <hr>
+
+                  <fos-menu-item>rainbow mike</fos-menu-item>
+           
+                 <fos-menu-item>chamath</fos-menu-item>
+                   <fos-menu-item>trae young</fos-menu-item>
+                   <fos-menu-item>quavo</fos-menu-item>
+              </fos-menu>
+              <div id="clock" style="min-width: 130px">QPQ = $107.69
+              </div>
           </fos-bar>
- <fos-icon href="art3d" name="pics" tabindex="0 ">
-            <img src="assets/notsure.png" alt="3D Art" title="3D Art">
+ <fos-icon href="pics" name="pics" tabindex="0 ">
+            <img src="assets/notsure.png" alt="pics" title="pics">
           </fos-icon>
          
          
@@ -191,7 +221,7 @@ document.getElementById('holla').onclick = onClick;
       
           </fos-window>
   
-          <fos-window name="art3d" title="3D Art" style="z-index: 900;">
+          <fos-window name="pics" title="pics" style="z-index: 900;">
               <fos-desktop id="art3dicons"><fos-icon href="art3d001" fixed="true" name="001" tabindex="0"><img src="./Victor Ribeiro_files/001.jpg"></fos-icon><fos-icon href="art3d002" fixed="true" name="002" tabindex="0"><img src="./Victor Ribeiro_files/002.jpg"></fos-icon></fos-desktop>
           </fos-window>
       <fos-window class="viewer" title="3D Art - 001" name="art3d001" style="left: 0px; top: 0px; height: 611.8px; z-index: 900;"><img src="./Victor Ribeiro_files/001.jpg"></fos-window>
