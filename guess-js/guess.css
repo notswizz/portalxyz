@@ -1,0 +1,32 @@
+#guess-wrap * {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+#guess-wrap {
+  padding: 15px;
+  max-width: 320px;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+}
+#guess-wrap h2 { margin: 10px 0; }
+#guess-wrap input, #guess-wrap button {
+  width: 100%;
+  padding: 10px;
+}
+#guess-wrap button {
+  margin-top: 10px;
+  border: 0;
+  color: #fff;
+  background: #9F2222;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1em;
+}
+#guess-txt {
+  margin-top: 10px;
+  padding: 10px;
+  text-align: center;
+}
+#guess-txt.high { background: #caddff; }
+#guess-txt.hit { background: #6fff0b; }
+#guess-txt.low { background: #ffc5b5; }

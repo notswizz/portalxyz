@@ -18,6 +18,7 @@
 	<link rel="icon" href="portal.gif" sizes="256x256">
 	<link rel="stylesheet" type="text/css" href="blackjack-js/blackjack.css">
     	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+    	<link rel="stylesheet" type="text/css" href="quiz-js/quiz.css">
     
 	<script src="js/fos.min.js"></script>
 
@@ -166,6 +167,15 @@ document.getElementById('holla').onclick = onClick;
             <img src="assets/portal.gif" alt="bj21" title="bj21">
           </fos-icon>
 
+         <fos-icon href="guess" name="guess" tabindex="0">
+            <img src="assets/portal.gif" alt="guess" title="guess">
+          </fos-icon>
+
+          <fos-icon href="quiz" name="quiz" tabindex="0">
+            <img src="assets/portal.gif" alt="quiz" title="quiz">
+          </fos-icon>
+
+
      
 
                <fos-icon href="streams" name="streams" tabindex="0" fixed="true">
@@ -186,7 +196,52 @@ document.getElementById('holla').onclick = onClick;
               
       
           </fos-window>
-          <fos-window name="bj" title="bj" style="display: none; z-index: 900;" >
+          <fos-window name="guess" title="guess" width="400" height="200" >
+  
+        
+           
+
+ <!-- JavaScript  -->
+     
+             <script type="text/javascript" src="guess-js/guess.js"></script>
+         
+             <!-- End JavaScript  -->
+  
+
+  
+              <iframe frameborder="0" src="guess-js/guess.html" allowfullscreen="yes" width="400" height="130" id="circular" ></iframe>
+          
+
+         
+           
+         
+
+        </fos-window>
+
+         <fos-window name="quiz" title="quiz" width="400" height="200" >
+  
+        
+           
+
+ <!-- JavaScript  -->
+     
+             <script type="text/javascript" src="quiz-js/quiz.js"></script>
+         
+             <!-- End JavaScript  -->
+  
+
+  
+              <iframe frameborder="0" src="quiz-js/quiz.html" allowfullscreen="yes" width="400" height="300" id="circular" ></iframe>
+          
+
+         
+           
+         
+
+        </fos-window>
+
+
+         <fos-window name="bj" title="bj" style="display: none; z-index: 900;" >
   
         
            
