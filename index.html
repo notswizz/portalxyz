@@ -100,37 +100,36 @@
               <div id="clock" style="min-width: 130px">QPQ = $107.69
               </div>
           </fos-bar>
- <fos-icon href="pics" name="pics" tabindex="0 ">
-            <img src="assets/notsure.png" alt="pics" title="pics">
+        
+      <fos-icon href="circle" name="circles" tabindex="0" fixed="true">
+              <img src="assets/circle.gif" alt="Games" title="Games">
+            </fos-icon>
+
+         <fos-icon href="clicks" name="clicks" tabindex="0">
+              <img src="assets/web2.gif" alt="About Me" title="About Me">
+            </fos-icon>
+        
+   <fos-icon href="notswizz" name="notswizz" tabindex="0">
+            <img src="assets/2heads.gif" alt="notswizz" title="notswizz">
           </fos-icon>
+        
+        
           <fos-icon href="aliens" name="aliens" tabindex="0 ">
             <img src="assets/wooga.gif" alt="aliens" title="aliens">
           </fos-icon>
          
-          <fos-icon href="streams" name="streams" tabindex="0">
-            <img src="assets/tv.png" alt="streams" title="streams">
+  <fos-icon href="journal" name="journal" tabindex="0">
+            <img src="assets/portal (1).gif" alt="journal" title="journal">
           </fos-icon>
-          <fos-icon href="circle" name="circles" tabindex="0">
-              <img src="assets/circle.gif" alt="Games" title="Games">
-            </fos-icon>
-       
-         
-          <fos-icon href="clicks" name="clicks" tabindex="0">
-              <img src="assets/web2.gif" alt="About Me" title="About Me">
-            </fos-icon>
-
-         <fos-icon href="notswizz" name="notswizz" tabindex="0">
-            <img src="assets/notsure.png" alt="notswizz" title="notswizz">
-          </fos-icon>
-
-        
 
          <fos-icon href="stats" name="stats" tabindex="0">
             <img src="assets/portal.gif" alt="stats" title="stats">
           </fos-icon>
 
-       <fos-icon href="journal" name="journal" tabindex="0">
-            <img src="assets/portal (1).gif" alt="journal" title="journal">
+     
+
+               <fos-icon href="streams" name="streams" tabindex="0" fixed="true">
+            <img src="assets/streams.gif" alt="streams" title="streams">
           </fos-icon>
 
           <fos-window name="journal" title="journal" style="display: none; z-index: 900;">
@@ -200,13 +199,13 @@
                 
           <fos-window name="notswizz" title="notswizz" style="z-index: 900;">
               <fos-desktop id="swizzIcons">
-                  <fos-icon href="j1" name="j1" fixed="true" tabindex="0">
+                  <fos-icon href="j1" name="j1" fixed="true">
                     <img src="assets/jackpink.jpg" alt="j1" title="j1" height= "100px" width= "100px"  style= "padding-top: 50px; padding-left: 50px">
                   </fos-icon>
                   
-                   <fos-window name="j1" title="j1" style="display: none; z-index: 900;">
+                   <fos-window class= "viewer" name="j1" title="j1" style="display: none; z-index: 900;">
   
-           <img src="assets/jackpink.jpg" alt="j1" title="j1" height= "300px" width= "300px"  style= "padding-top: 10px; padding-left: 10px">
+         <div>  <img src="assets/jackpink.jpg" alt="j1" title="j1" height= "300px" width= "300px"  style= "padding-top: 10px; padding-left: 10px"></div>
 
                      
 
@@ -279,11 +278,7 @@ document.getElementById('holla').onclick = onClick;
       
           </fos-window>
   
-          <fos-window name="pics" title="pics" style="z-index: 900;">
-              <fos-desktop id="art3dicons"><fos-icon href="jackpink.jpg" fixed="true" name="001" tabindex="0"><img src="./Victor Ribeiro_files/001.jpg"></fos-icon><fos-icon href="art3d002" fixed="true" name="002" tabindex="0"><img src="./Victor Ribeiro_files/002.jpg"></fos-icon></fos-desktop>
-          </fos-window>
-      <fos-window class="viewer" title="3D Art - 001" name="art3d001" style="left: 0px; top: 0px; height: 611.8px; z-index: 900;"><img src="./Victor Ribeiro_files/001.jpg"></fos-window>
-      <fos-window class="viewer" title="3D Art - 002" name="art3d002" style="left: 0px; top: 0px; height: 600px; z-index: 900;"><img src="./Victor Ribeiro_files/002.jpg"></fos-window></fos-desktop>
+    </fos-desktop>
       
   
       
