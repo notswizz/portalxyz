@@ -17,7 +17,10 @@
 	<meta property="og:image:height" content="640">
 	<link rel="icon" href="portal.gif" sizes="256x256">
 	<link rel="stylesheet" type="text/css" href="css/main.min.css">
+    
 	<script src="js/fos.min.js"></script>
+     <script src = "js/phaser.min.js"></script>
+  <script src = "js/game.js"></script>
 	
 </head>
 
@@ -61,33 +64,35 @@
               <fos-menu name="Start" tabindex="0">
                   <div style="min-width: 100px">Menu</div>
                   <hr>
-                  <fos-menu-item href="radio" tabindex="0"><img src="icon.png">Radio</fos-menu-item>
+
                   <fos-menu-item href="art3d" tabindex="0"><img src="icon.png">3D Art</fos-menu-item>
               </fos-menu>
               <div id="clock">08:13</div>
           </fos-bar>
-
-          <fos-icon href="jack" name="jack" tabindex="0">
-            <img src="assets/portal (1).gif" alt="About Me" title="About Me">
+ <fos-icon href="art3d" name="pics" tabindex="0 ">
+            <img src="assets/notsure.png" alt="3D Art" title="3D Art">
           </fos-icon>
-          <fos-icon href="stats" name="stats" tabindex="0">
-            <img src="assets/portal.gif" alt="stats" title="stats">
-          </fos-icon>
+         
+         
           <fos-icon href="streams" name="streams" tabindex="0">
-            <img src="assets/icon.png" alt="Games" title="Games">
+            <img src="assets/tv.png" alt="streams" title="streams">
           </fos-icon>
           <fos-icon href="circle" name="circles" tabindex="0">
               <img src="assets/circle.gif" alt="Games" title="Games">
             </fos-icon>
+       
          
-          <fos-icon href="art3d" name="pics" tabindex="0">
-            <img src="assets/icon.png" alt="3D Art" title="3D Art">
-          </fos-icon>
-          <fos-icon href="web2" name="web2" tabindex="0">
-              <img src="assets/icon.png" alt="About Me" title="About Me">
+          <fos-icon href="clicks" name="clicks" tabindex="0">
+              <img src="assets/web2.gif" alt="About Me" title="About Me">
             </fos-icon>
 
-        //WINDOWS
+         <fos-icon href="stats" name="stats" tabindex="0">
+            <img src="assets/portal.gif" alt="stats" title="stats">
+          </fos-icon>
+
+       <fos-icon href="jack" name="jack" tabindex="0">
+            <img src="assets/portal (1).gif" alt="About Me" title="About Me">
+          </fos-icon>
 
           <fos-window name="jack" title="jack" style="display: none; z-index: 900;">
   
@@ -125,6 +130,7 @@
           </fos-window>
                   
               </fos-desktop>
+
           </fos-window>
   
         
@@ -139,17 +145,50 @@
              <script type="text/javascript" src="js/game.js"></script>
              <!-- End JavaScript  -->
   
-      
+
   
               <iframe frameborder="0" src="circleGame.html" allowfullscreen="yes" width="360" height="500" id="circular"></iframe>
+
+
+
+     
   
   
       
           </fos-window>
         
-          <fos-window name="web2" title="web2" style="display: none; z-index: 900;">
+          <fos-window name="clicks" title="clicks" style="display: none; z-index: 900;">
   
-             <h1>web2 socials</h1>
+          <body id="holla">
+
+
+
+  Click Count:
+  <input id="countDisplay" type="text"/>
+
+             <script>
+    // Initial count
+var clickCount = 0;
+
+
+// Function to increment
+function onClick(event){
+ clickCount++;
+  document.getElementById('countDisplay').value = clickCount;
+}
+
+// Bind events
+document.getElementById('holla').onclick = onClick;
+
+
+
+
+
+  </script>
+
+
+
+          </body>
       
           </fos-window>
   
