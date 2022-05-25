@@ -97,6 +97,47 @@
                <hr>
                <fos-menu-item>64+ frens</fos-menu-item>
               </fos-menu>
+
+              <fos-menu name="stats" style="min-width: 40px; padding-left: 75px">
+            <div>7 day QPQ rate: 2.09</div>
+           <div>30 day QPQ rate: 2.69</div>
+
+                  <fos-menu-item>
+                      <body id="holla">
+
+
+
+  Click Count:
+  <input id="countDisplay" type="text"/>
+
+             <script>
+    // Initial count
+var clickCount = 0;
+
+
+// Function to increment
+function onClick(event){
+ clickCount++;
+  document.getElementById('countDisplay').value = clickCount;
+}
+
+// Bind events
+document.getElementById('holla').onclick = onClick;
+
+
+
+
+
+  </script>
+
+
+
+          </body>
+      
+                  </fos-menu-item>
+           
+               
+              </fos-menu>
               <div id="clock" style="min-width: 130px">QPQ = $107.69
               </div>
           </fos-bar>
