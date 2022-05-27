@@ -95,9 +95,12 @@ class playGame extends Phaser.Scene{
 			let randomAngle = Phaser.Math.FloatBetween(0, Math.PI * 2);
 			let randomSpeed = Phaser.Math.FloatBetween(gameOptions.enemySpeedRange[0], gameOptions.enemySpeedRange[1]);
 			let enemy = this.add.sprite(this.lowerCircle.x + gameOptions.circleRadius * Math.cos(randomAngle), this.lowerCircle.y + gameOptions.circleRadius * Math.sin(randomAngle), "enemyball");
+  
 			enemy.speed = randomSpeed;
 			enemy.radians = randomAngle;
 			this.enemyGroup.add(enemy);
+
+          console.count("loops", this.add.sprite(enemy))
 			
 
 	
