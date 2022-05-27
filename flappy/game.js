@@ -27,11 +27,11 @@ window.onload = function() {
         type: Phaser.AUTO,
         backgroundColor:0x87ceeb,
         scale: {
-            mode: Phaser.Scale.FIT,
+         
             autoCenter: Phaser.Scale.CENTER_BOTH,
             parent: 'thegame',
             width: 320,
-            height: 480
+            height: 400
         },
         pixelArt: true,
         physics: {
