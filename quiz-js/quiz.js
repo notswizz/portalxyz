@@ -4,27 +4,27 @@ var quiz = {
   // Q = QUESTION, O = OPTIONS, A = CORRECT ANSWER
   data: [
   {
-    q : "What is the standard distance between the target and archer in Olympics?",
+    q : "best NBA player",
     o : [
-      "50 meters",
-      "70 meters",
-      "100 meters",
-      "120 meters"
+      "bron bron",
+      "ice trae",
+      "luka",
+      "giannis"
     ],
     a : 1 // arrays start with 0, so answer is 70 meters
   },
   {
-    q : "Which is the highest number on a standard roulette wheel?",
+    q : "what do we call this thing??",
     o : [
-      "22",
-      "24",
-      "32",
-      "36"
+      "WeThey Portol",
+      "portol.xyz",
+      "wetheyportol.xyz",
+      "don't not click this one"
     ],
     a : 3
   },
   {
-    q : "How much wood could a woodchuck chuck if a woodchuck would chuck wood?",
+    q : "How much wood could a woodchuck chuck if a woodchuck would chuck wood and the woodchuck had mike vick's jersey number on the falcons x 100 of woodchucked wood for a woodchuckin mama cuckin woodchuck named chuck?",
     o : [
       "400 pounds",
       "550 pounds",
@@ -37,19 +37,19 @@ var quiz = {
     q : "Which is the seventh planet from the sun?",
     o : [
       "Uranus",
-      "Earth",
-      "Pluto",
-      "Mars"
+      "Urmom",
+      "Urine",
+      "fr don't click this one"
     ],
     a : 0
   },
   {
-    q : "Which is the largest ocean on Earth?",
+    q : "bitclout??",
     o : [
-      "Atlantic Ocean",
-      "Indian Ocean",
-      "Arctic Ocean",
-      "Pacific Ocean"
+      "good",
+      "bad",
+      "see results",
+      "bitwho??"
     ],
     a : 3
   }
@@ -134,10 +134,6 @@ var quiz = {
   },
 
   // (E) RESTART QUIZ
-  reset : () => {
-    quiz.now = 0;
-    quiz.score = 0;
-    quiz.draw();
-  }
+
 };
 window.addEventListener("load", quiz.init);

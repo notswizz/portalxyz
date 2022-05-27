@@ -2,15 +2,14 @@
 #quizWrap {
   max-width: 600px;
   margin: 0 auto;
-  /* RECOMMENDED FIXED HEIGHT IF YOU HAVE CONTENT BELOW THE QUIZ */
-  /* SO THAT PAGE LAYOUT DOES NOT "JUMP" */
-  /* height: 250px; */
+
+ max-height: 100px; 
 }
 
 /* (B) QUESTION */
 #quizQn {
   padding: 20px;
-  background: #4c93ba;
+  background: #008081;
   color: #fff;
   font-size: 24px;
   border-radius: 10px;
@@ -25,8 +24,8 @@
 }
 #quizAns input[type=radio] { display: none; }
 #quizAns label {
-  background: #fafafa;
-  border: 1px solid #eee;
+  background: #85c6c7;
+  border: 2px solid #000000;
   border-radius: 10px;
   padding: 10px;
   font-size: 20px;
@@ -34,11 +33,11 @@
   text-align: center;
 }
 #quizAns label.correct {
-  background: #d8ffc4;
-  border: 1px solid #60a03f;
+  background: #25e94c;
+  border: 5px solid #008081;
 }
 #quizAns label.wrong {
-  background: #ffe8e8;
-  border: 1px solid #c78181;
+  background: #f41010;
+  border: 5px solid #008081;
 }
 
