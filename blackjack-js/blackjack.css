@@ -5,15 +5,15 @@
 /* (B1) CONTAINERS */
 #deal-data, #play-data, #deal-cards, #play-cards, #play-control { padding: 20px; }
 #deal-data, #play-data { font-weight: 700; }
-#deal-cards, #play-cards { min-height: 120px; }
-#deal-data { background: #c9e1ff; }
-#deal-cards { background: #e4f0ff; }
-#play-data { background: #ffcfcf; }
-#play-cards { background: #ffe7e7; }
-#play-control { background: #f2daff; }
+#deal-cards, #play-cards { min-height: 60px; }
+#deal-data { background: #008081; }
+#deal-cards { background: #ffffff; }
+#play-data { background: #008081; }
+#play-cards { background: #ffffff; }
+#play-control { background: #758000; }
 #deal-stand, #play-stand {
   display: none; padding: 5px;
-  color: #fff; background: #ab2323;
+  color: #fff; background: #80002b;
 }
 #deal-stand.stood, #play-stand.stood { display: inline-block; }
 
@@ -25,11 +25,13 @@
 .bj-card {
   display: flex;
   align-items: center; justify-content: center;
-  margin: 10px;
-  width: 100px; height: 100px;
+  margin: 5px;
+  width: 60px; height: 60px;
   font-size: 2em;
   text-align: center;
   background: #fff;
+  border-color: #758000;
+  border-width: 2px;
 }
 #deal-first .front { display: none; }
 #deal-first.show .back { display: none; }
@@ -39,10 +41,10 @@
 #play-control input {
   cursor: pointer;
   font-weight: 700;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border: 0;
   color: #fff;
-  background: #4381de;
+  background: #80002b;
 }
 #playc-hit, #playc-stand { display: none; }
 #play-control.started #playc-start { display: none; }
