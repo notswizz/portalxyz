@@ -100,16 +100,20 @@ class playGame extends Phaser.Scene{
 			enemy.radians = randomAngle;
 			this.enemyGroup.add(enemy);
 
-          console.count("loops", this.add.sprite(enemy))
-			
+          console.count("loops", this.add.sprite("enemy"))
+
+
 
 	
 
 		}
 
 
-
 	}
+  
+
 
 }
+
+    
 

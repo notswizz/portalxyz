@@ -3,10 +3,11 @@
   box-sizing: border-box;
 }
 #guess-wrap {
-  padding: 15px;
-  max-width: 320px;
-  border: 1px solid #ccc;
-  background: #f2f2f2;
+  padding: 5px;
+  max-width:310 px;
+  max-height: 170px;;
+  border: 1px solid #ee00ff;
+  background: #008081;
 }
 #guess-wrap h2 { margin: 10px 0; }
 #guess-wrap input, #guess-wrap button {
@@ -17,7 +18,7 @@
   margin-top: 10px;
   border: 0;
   color: #fff;
-  background: #9F2222;
+  background: #758000;
   cursor: pointer;
   font-weight: 700;
   font-size: 1em;
