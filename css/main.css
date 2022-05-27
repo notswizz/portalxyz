@@ -7,6 +7,7 @@ html, body{
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+  font: monospace;
 
 }
 canvas{
@@ -52,11 +53,12 @@ canvas{
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:monospace;
 	font-size:15px;
 	padding:9px 23px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #263666;
+  
 }
 #btnPlay:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
@@ -77,4 +79,6 @@ select {
 	-webkit-appearance:none; /* Safari and Chrome */
 	appearance:none;
 }
+
+
 
